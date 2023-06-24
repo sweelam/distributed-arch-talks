@@ -33,3 +33,6 @@ Java, Kotlin, and nodejs
 
 # Where can I find the material?
 The presentation is attached in this repo, you can download it "distributed-systems.pdf"
+
+# Where can I find the source code examples?
+The main source code repo is https://github.com/sweelam/flight-system , however we might add more examples that will be shared in video description
