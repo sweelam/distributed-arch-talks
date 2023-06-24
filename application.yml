@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    default-filters:
+      - name: Retry
+        args:
+          retry: 5
+          methods: GET
+          backoff:
+            firstBackOff: 10ms
+            maxBackOff: 50ms
+            factor: 2
+            basedOnPreviousValue: false

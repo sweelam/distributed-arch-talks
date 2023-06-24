@@ -1,0 +1,194 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{seagull}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{colortbl}
+
+\tikzstyle{block} = [rectangle, draw, text width=4.5em, text centered, minimum height=2em]
+\lstset{basicstyle=\small\ttfamily}
+
+
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green!60!black},
+  stringstyle=\color{red},
+  showstringspaces=false,
+  breaklines=true
+}
+
+\setbeamertemplate{navigation symbols}{} % Remove navigation symbols
+
+\title{Distributed Systems in Action}
+\author{Mohamed Sweelam}
+\institute{Software Engineer}
+\date{}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Introduction to Distributed Systems}
+\begin{frame}{Introduction to Distributed Systems}
+  \begin{itemize}
+    \item Definition and characteristics of distributed systems
+    \item Importance and benefits of distributed systems
+    \item Challenges and trade-offs in designing distributed systems
+  \end{itemize}
+\end{frame}
+
+\section{Use Case: Flight System}
+\begin{frame}{Use Case: Flight System}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{img/system-HLD-1.png}
+  \end{center}
+\end{frame}
+\begin{frame}{API Documentations}
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{img/sd.png}
+  \end{center}
+\end{frame}
+
+\section{CAP Theorem}
+\begin{frame}{CAP Theorem}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{img/CAP_Theorem_Venn_Diagram.png}
+  \end{center}
+\end{frame}
+
+\section{High Availability and Scalability}
+\begin{frame}{High Availability and Scalability}
+  \begin{itemize}
+    \item Load Balancer
+    \item API Gateway
+    \item Rate Limiter
+    \item[] 
+    		\begin{center}
+   	 		\includegraphics[width=0.7\textwidth, height=60mm, scale=2]{img/hld-latest.png}
+  		\end{center}
+  	\end{itemize}
+\end{frame}
+
+\section{Resiliency}
+\begin{frame}{Resiliency}
+    		\begin{center}
+   	 		\lstinputlisting[language=python]{application.yml}
+  		\end{center}
+\end{frame}
+
+\section{Data Replication}
+\begin{frame}{Data Replication}
+        \begin{center}
+   	 		\includegraphics[width=0.8\textwidth, height=60mm, scale=1]{img/DR.png}
+  		\end{center}
+\end{frame}
+
+\section{Distributed Messaging Systems}
+\begin{frame}{Distributed Messaging Systems}
+  \begin{itemize}
+    \item Introduction to distributed messaging systems
+    \item Overview of Kafka and RabbitMQ
+  \end{itemize}
+\end{frame}
+\begin{frame}{RabbitMQ vs Kafka}
+        \begin{center}
+   	 		\includegraphics[width=120mm, height=70mm, scale=1]{img/kafkavsrmq.jpg}
+  		\end{center}
+\end{frame}
+\begin{frame}{Data Replication: CDC}
+\small In databases, \textbf{change data capture (CDC)} is a set of \textit{software design patterns} used to determine and track the data that has changed (the "deltas") so that action can be taken using the changed data.
+        \begin{center}
+   	 		\includegraphics[width=0.8\textwidth, height=60mm, scale=1]{img/kafka-connect1.jpg}
+  		\end{center}
+\end{frame}
+\begin{frame}{Data Replication: CDC}
+	\begin{center}
+   	 		\includegraphics[width=0.7\textwidth, height=80mm, scale=2]{img/cdc-example.jpg}
+  		\end{center}
+\end{frame}
+
+
+\section{Distributed Key-Value Stores}
+\begin{frame}{Distributed Key-Value Stores}
+  \begin{itemize}
+    \item Introduction to distributed key-value stores (e.g., Dynamo, Cassandra)
+    \item Data partitioning and replication techniques
+    \item Consistency and availability trade-offs
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Distributed Messaging Systems}
+  \begin{itemize}
+    \item Introduction to distributed messaging systems
+    \item Overview of Kafka and RabbitMQ
+    \item Comparison between Kafka and RabbitMQ:
+  \end{itemize}
+
+  \begin{table}[h]
+    \centering
+    \footnotesize
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+      \hline
+      \rowcolor[RGB]{232,232,232}
+      \textbf{\textcolor{blue}{Kafka}} & \textbf{\textcolor{red}{RabbitMQ}} \\
+      \hline
+      High-throughput, fault-tolerant distributed streaming platform. &
+      Robust and flexible messaging broker. \\
+      \hline
+      Emphasizes real-time event streaming and data pipeline use cases. &
+      Implements Advanced Message Queuing Protocol (AMQP). \\
+      \hline
+      Provides strong durability and replication guarantees. &
+      Focuses on message queuing and asynchronous communication. \\
+      \hline
+      Scales horizontally to handle large-scale data streams. &
+      Provides various messaging patterns (e.g., publish-subscribe, point-to-point). \\
+      \hline
+      Supports complex event processing with built-in stream processing. &
+      Offers pluggable message durability, routing, and acknowledgement mechanisms. \\
+      \hline
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+\section{Distributed System Security}
+\begin{frame}{Distributed System Security}
+  \begin{itemize}
+    \item Security challenges in distributed systems
+    \item Authentication and access control in distributed environments
+    \item Distributed denial-of-service (DDoS) prevention techniques
+  \end{itemize}
+\end{frame}
+
+\section{Distributed System Monitoring}
+\begin{frame}{Distributed System Monitoring}
+  \begin{itemize}
+    \item Log aggregation and distributed tracing
+    \item Metrics collection and monitoring tools (e.g., Prometheus, Grafana)
+    \item Anomaly detection and performance optimization
+  \end{itemize}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+  \begin{itemize}
+    \item Recap of distributed systems concepts
+    \item Overview of various distributed systems topics
+    \item Further resources for exploring distributed systems in depth
+  \end{itemize}
+\end{frame}
+
+\end{document}

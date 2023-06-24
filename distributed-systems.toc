@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Introduction to Distributed Systems}{3}{0}{1}
+\beamer@sectionintoc {2}{Use Case: Flight System}{4}{0}{2}
+\beamer@sectionintoc {3}{CAP Theorem}{6}{0}{3}
+\beamer@sectionintoc {4}{High Availability and Scalability}{7}{0}{4}
+\beamer@sectionintoc {5}{Resiliency}{8}{0}{5}
+\beamer@sectionintoc {6}{Data Replication}{9}{0}{6}
+\beamer@sectionintoc {7}{Distributed Messaging Systems}{10}{0}{7}
+\beamer@sectionintoc {8}{Distributed Key-Value Stores}{14}{0}{8}
+\beamer@sectionintoc {9}{Distributed System Security}{16}{0}{9}
+\beamer@sectionintoc {10}{Distributed System Monitoring}{17}{0}{10}
+\beamer@sectionintoc {11}{Conclusion}{18}{0}{11}
