@@ -30,3 +30,6 @@ The talks focus on the practices.
 
 # Which programming language is used in the talks?
 Java, Kotlin, and nodejs
+
+# Where can I find the material?
+The presentation is attached in this repo, you can download it "distributed-systems-talks.pdf"
