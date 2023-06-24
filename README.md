@@ -1,4 +1,4 @@
-## In this FAQ talks overview, and contents that will be covered. You can also watch the videos of the talks on [Distributed Systems in Action - Arabic](https://www.youtube.com/playlist?list=PLgAqrVq84PDcg55xnbUBHuLS8tWul6-kF)
+## In this FAQ you will find the talks overview, and contents that will be covered. You can also watch the videos of the talks on [Distributed Systems in Action - Arabic](https://www.youtube.com/playlist?list=PLgAqrVq84PDcg55xnbUBHuLS8tWul6-kF)
 
 # What are these talks about?
 The talks are about distributed systems and the so-called microservices architecture and microservices in practice, you can learn inside the followings:
