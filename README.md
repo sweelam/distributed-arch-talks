@@ -32,4 +32,4 @@ The talks focus on the practices.
 Java, Kotlin, and nodejs
 
 # Where can I find the material?
-The presentation is attached in this repo, you can download it "distributed-systems-talks.pdf"
+The presentation is attached in this repo, you can download it "distributed-systems.pdf"
