@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.10.7)  25 JUN 2023 09:12
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2022.10.7)  25 JUN 2023 09:47
  restricted system commands enabled.
 **distributed-systems.tex
 (./distributed-systems.tex
@@ -1161,7 +1161,7 @@ Underfull \hbox (badness 3907) in paragraph at lines 154--154
 ] [16
 
 ]
-<img/sd.png, id=220, 1259.70625pt x 718.685pt>
+<img/sd.png, id=219, 1259.70625pt x 718.685pt>
 File: img/sd.png Graphic file (type png)
 <use img/sd.png>
 Package luatex.def Info: img/sd.png  used on input line 189.
@@ -1204,7 +1204,7 @@ otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans8-regular
 .otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regul
 ar.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-reg
 ular.otf>
-Output written on distributed-systems.pdf (18 pages, 1215831 bytes).
+Output written on distributed-systems.pdf (18 pages, 1215836 bytes).
 
 PDF statistics: 285 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams
