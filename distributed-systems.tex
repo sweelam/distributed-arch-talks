@@ -63,6 +63,43 @@
   \end{center}
 \end{frame}
 
+\section{Distributed Databases}
+\begin{frame}{Distributed Databases}
+	\begin{itemize}
+    		\item \textbf{Consistency} every read operation gives a result of the most recent write.
+    		\item \textbf{Availability} every read operation gives a non-error response, but, data might be staled.
+    		\item \textbf{Partition Tolerance} system operates normally despite network failure.
+    	\end{itemize}
+  \begin{center}
+    \includegraphics[width=0.3\textwidth]{img/CAP_Theorem_Venn_Diagram.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Distributed Databases}
+  \begin{center}
+    In the presence of network partitioning, system designers must choose between data consistency and availablity. \\
+    \includegraphics[width=0.5\textwidth]{img/CAP_Theorem_Venn_Diagram.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Distributed Databases}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{img/Q-scenario.png}
+  \end{center}
+  
+  Snapshot from Datastax website
+\end{frame}
+
+
+\begin{frame}{Distributed Databases}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{img/db-cap-theorem.png}
+  \end{center}
+\end{frame}
+
+
 \section{High Availability and Scalability}
 \begin{frame}{High Availability and Scalability}
   \begin{itemize}
@@ -74,6 +111,13 @@
    	 		\includegraphics[width=0.7\textwidth, height=60mm, scale=2]{img/hld-latest.png}
   		\end{center}
   	\end{itemize}
+\end{frame}
+
+\section{Scalability}
+\begin{frame}{Horizontal Scaling vs Vertical Scaling}
+	\begin{center}  
+  		\includegraphics[scale = 0.3]{img/scaling.png}
+  	\end{center}
 \end{frame}
 
 \section{Resiliency}
@@ -156,11 +200,50 @@
 
 \section{Distributed Key-Value Stores}
 \begin{frame}{Distributed Key-Value Stores}
+	  
   \begin{itemize}
-    \item Introduction to distributed key-value stores (e.g., Dynamo, Cassandra)
+  	\item[] A type of NoSQL DBs, the idea behind having \textbf{it} is having an extremely fast mechanism for retrieving the data.
+    \item Introduction to distributed key-value stores (e.g., Redis, Memcached)
     \item Data partitioning and replication techniques
     \item Consistency and availability trade-offs
   \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Distributed Key-Value Stores: Memcached vs Redis}
+	\includegraphics[width=0.1\textwidth]{img/memcached_image.png}		\hfill
+    \includegraphics[width=0.1\textwidth]{img/redis_image.png}
+  \begin{table}[h]
+    \centering
+    \footnotesize
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|p{0.45\textwidth}|p{0.45\textwidth}|}
+      \hline
+      \rowcolor[RGB]{232,232,232}
+      \textbf{\textcolor{blue}{Memcached}} & \textbf{\textcolor{red}{Redis}} \\
+      \hline
+      In-memory key-value store primarily designed for caching.
+      & 
+      In-memory key-value store with additional data structures and functionality.
+      \\
+      \hline
+      Supports simple key-value operations like GET, SET, DELETE. &
+      Offers a rich set of data structures (strings, lists, sets, hashes, sorted sets). \\
+      \hline
+      Lacks built-in persistence mechanisms. &
+      Provides persistence options (snapshotting, append-only file, replication). \\
+      \hline
+      Does not support complex queries or secondary indexes. &
+      Supports more advanced operations like sorting, ranking, and filtering. \\
+      \hline
+      Focuses on high performance and low latency. &
+      Balances performance with additional functionality and data structures. \\
+      \hline
+      No built-in way of replication, requires additional component. &
+      Come with out-of-the-box replication using cluster, and as feature with \textbf{Sentinel}. \\
+      \hline
+    \end{tabular}
+  \end{table}
 \end{frame}
 
 
