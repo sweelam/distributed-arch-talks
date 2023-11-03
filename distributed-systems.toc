@@ -8,6 +8,7 @@
 \beamer@sectionintoc {8}{Data Replication}{13}{0}{8}
 \beamer@sectionintoc {9}{Distributed Messaging Systems}{14}{0}{9}
 \beamer@sectionintoc {10}{Distributed Key-Value Stores}{19}{0}{10}
-\beamer@sectionintoc {11}{Distributed System Security}{21}{0}{11}
-\beamer@sectionintoc {12}{Distributed System Monitoring}{22}{0}{12}
-\beamer@sectionintoc {13}{Conclusion}{24}{0}{13}
+\beamer@sectionintoc {11}{Consensus}{21}{0}{11}
+\beamer@sectionintoc {12}{Distributed System Security}{22}{0}{12}
+\beamer@sectionintoc {13}{Distributed System Monitoring}{24}{0}{13}
+\beamer@sectionintoc {14}{Conclusion}{26}{0}{14}
