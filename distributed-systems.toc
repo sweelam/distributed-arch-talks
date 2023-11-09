@@ -9,6 +9,7 @@
 \beamer@sectionintoc {9}{Distributed Messaging Systems}{14}{0}{9}
 \beamer@sectionintoc {10}{Distributed Key-Value Stores}{19}{0}{10}
 \beamer@sectionintoc {11}{Consensus}{21}{0}{11}
-\beamer@sectionintoc {12}{Distributed System Security}{22}{0}{12}
-\beamer@sectionintoc {13}{Distributed System Monitoring}{24}{0}{13}
-\beamer@sectionintoc {14}{Conclusion}{26}{0}{14}
+\beamer@sectionintoc {12}{Physical Clock \& Logical Clock}{22}{0}{12}
+\beamer@sectionintoc {13}{Distributed System Security}{26}{0}{13}
+\beamer@sectionintoc {14}{Distributed System Monitoring}{28}{0}{14}
+\beamer@sectionintoc {15}{Conclusion}{30}{0}{15}
